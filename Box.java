@@ -32,6 +32,7 @@ Box(){
 	
 	calcVolume();
 	System.out.println(volume);
+	System.out.println(volume);
 	System.out.println(volume1);
 }
 	
