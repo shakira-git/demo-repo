@@ -33,7 +33,6 @@ Box(){
 	calcVolume();
 	System.out.println(volume);
 	System.out.println(volume);
-	System.out.println(volume1);
 }
 	
 
@@ -46,13 +45,13 @@ public void calcVolume(){
 public static void main(String arg[]){
 
 	Box b1= new Box();
-/*	b1.calcVolume();
+	b1.calcVolume();
 	
 	Box b2 = new Box(10.0);
-//	b2.calcVolume();
+	b2.calcVolume();
 	
 	Box b3 = new Box();
-//	b3.calcVolume();*/
+//	b3.calcVolume();
 }
 
 }
