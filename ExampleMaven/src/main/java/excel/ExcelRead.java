@@ -28,8 +28,9 @@ public class ExcelRead {
 
 		Row row = sheet.getRow(i);
 		Cell cell = row.getCell(j);
-		CellType type = cell.getCellType();
 	
+		CellType type = cell.getCellType();
+
 		switch (type) {
 		case NUMERIC:
 			return String.valueOf(cell.getNumericCellValue());
@@ -42,22 +43,6 @@ public class ExcelRead {
 
 	public int rowsize() {
 		return sheet.getLastRowNum() + 1;
-	}
-
-	public static void main(String[] args) throws IOException {
-		ExcelRead er = new ExcelRead();
-		
-//		String value = er.readData(0, 0);
-//		System.out.println(value);
-		
-		for (int i = 0; i < er.rowsize(); i++) {   //row
-
-			for (int j = 0; j < 3; j++) {  			//cell
-				String value = er.readData(i, j);
-				System.out.println(value);
-			}
-		}
-
 	}
 
 }
